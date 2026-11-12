@@ -1,0 +1,11 @@
+# Constraints are included so `pip install -r requirements.txt` uses the tested pins.
+-c constraints.txt
+fastapi
+uvicorn[standard]
+google-genai
+pydantic
+python-dotenv
+pypdf
+python-docx
+textract
+python-multipart

@@ -1,0 +1,10 @@
+# Tested with Python 3.13.5. Keep this file in sync with the deployed AI environment.
+fastapi==0.136.3
+uvicorn==0.49.0
+google-genai==2.26.0
+pydantic==2.13.4
+python-dotenv==1.2.2
+pypdf==6.19.0
+python-docx==1.2.0
+textract==2.1.0
+python-multipart==0.0.32

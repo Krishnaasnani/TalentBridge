@@ -1,0 +1,19 @@
+@import "./AdminShared.css";
+
+.admin-dashboard-page { color: var(--color-text); max-width: 1180px; margin: 0 auto; padding: var(--space-12) var(--space-6); }
+.admin-dashboard-header { margin-bottom: 30px; }
+.admin-dashboard-header h1 { color: var(--color-navy); font-size: clamp(30px, 4vw, 42px); letter-spacing: -.04em; margin: 7px 0 10px; }
+.admin-dashboard-header > p:last-child { color: var(--color-text-muted); font-size: 16px; }
+.admin-statistics { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+.admin-statistics article { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); min-height: 132px; min-width: 0; padding: 20px; }
+.admin-statistics span { color: var(--color-text-muted); display: block; font-size: 14px; font-weight: 600; overflow-wrap: anywhere; }
+.admin-statistics strong { color: var(--color-primary); display: block; font-size: 34px; line-height: 1; margin-top: 18px; }
+.admin-statistics a { color: var(--color-primary); display: inline-block; font-size: 13px; font-weight: 700; margin-top: 12px; text-decoration: none; }
+.admin-dashboard-state { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); color: var(--color-text-muted); padding: 30px; text-align: center; }
+.admin-dashboard-error { border-color: var(--color-danger); color: var(--color-danger); }
+.admin-dashboard-error p { margin-bottom: 14px; }
+.admin-dashboard-error button { background: var(--color-primary); border: 0; border-radius: 8px; color: #fff; cursor: pointer; font: inherit; font-weight: 700; padding: 9px 15px; }
+
+@media (max-width: 900px) { .admin-statistics { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 680px) { .admin-statistics { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 460px) { .admin-dashboard-page { padding: var(--space-8) var(--space-4) var(--space-12); } .admin-statistics { grid-template-columns: 1fr; } .admin-statistics article { min-height: 108px; } }

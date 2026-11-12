@@ -1,0 +1,23 @@
+.home-section { padding: clamp(4.5rem, 9vw, 7rem) max(1.5rem, calc((100vw - 1180px) / 2)); }
+.section-intro { margin: 0 auto clamp(2rem, 5vw, 3.5rem); max-width: 690px; text-align: center; }
+.section-eyebrow { color: var(--color-primary); font-size: var(--text-sm); font-weight: 800; letter-spacing: .09em; margin: 0 0 var(--space-3); text-transform: uppercase; }
+.section-intro h2, .workflow-heading h2 { color: var(--color-navy); font-size: var(--text-3xl); letter-spacing: -.04em; line-height: 1.15; margin: 0; }
+.section-intro > p:last-child { color: var(--color-text-muted); margin: var(--space-4) 0 0; }
+.capabilities { background: var(--color-page); }
+.capability-grid { display: grid; gap: var(--space-5); grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.capability-card { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); display: flex; flex-direction: column; min-height: 260px; padding: var(--space-6); transition: border-color .2s ease, box-shadow .2s ease, transform .2s ease; }
+.capability-card:hover { border-color: var(--color-border-strong); box-shadow: var(--shadow-md); transform: translateY(-3px); }
+.capability-icon { align-items: center; background: var(--color-primary-soft); border-radius: var(--radius-md); color: var(--color-primary); display: inline-flex; font-size: 1.35rem; font-weight: 800; height: 2.75rem; justify-content: center; width: 2.75rem; }
+.capability-card h3 { color: var(--color-navy); font-size: var(--text-lg); letter-spacing: -.02em; margin: var(--space-5) 0 var(--space-2); }
+.capability-card p { color: var(--color-text-muted); font-size: var(--text-sm); margin: 0; }
+.text-link { color: var(--color-primary); font-size: var(--text-sm); font-weight: 800; margin-top: auto; padding-top: var(--space-5); text-decoration: none; width: fit-content; }
+.text-link:hover { color: var(--color-primary-hover); text-decoration: underline; }
+.candidate-workflow { border-top: 1px solid var(--color-border); display: grid; gap: var(--space-10); grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); margin-top: clamp(3.5rem, 8vw, 6rem); padding-top: clamp(3.5rem, 7vw, 5rem); }
+.workflow-heading { max-width: 420px; }
+.workflow-list { counter-reset: workflow; display: grid; gap: var(--space-5); list-style: none; margin: 0; padding: 0; }
+.workflow-list li { align-items: flex-start; display: grid; gap: var(--space-4); grid-template-columns: auto 1fr; }
+.workflow-list > li > span { align-items: center; background: var(--color-navy); border-radius: 50%; color: #fff; display: inline-flex; font-size: var(--text-xs); font-weight: 800; height: 2.25rem; justify-content: center; width: 2.25rem; }
+.workflow-list h3 { color: var(--color-navy); font-size: var(--text-base); margin: 0 0 var(--space-1); }
+.workflow-list p { color: var(--color-text-muted); font-size: var(--text-sm); margin: 0; }
+@media (max-width: 900px) { .capability-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }.candidate-workflow { grid-template-columns: 1fr; } }
+@media (max-width: 560px) { .home-section { padding-inline: var(--space-4); }.capability-grid { grid-template-columns: 1fr; }.capability-card { min-height: 0; }.candidate-workflow { gap: var(--space-8); } }

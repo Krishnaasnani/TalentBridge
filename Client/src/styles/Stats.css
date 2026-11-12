@@ -1,0 +1,22 @@
+.stats {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 60px 80px;
+  background: #ffffff;
+}
+
+.stat-card {
+  text-align: center;
+}
+
+.stat-card h2 {
+  font-size: 40px;
+  color: #2563eb;
+}
+
+.stat-card p {
+  margin-top: 10px;
+  color: #64748b;
+  font-size: 18px;
+}

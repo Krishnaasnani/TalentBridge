@@ -1,0 +1,32 @@
+@import "./AdminShared.css";
+
+.admin-users-page { max-width: 1180px; margin: 0 auto; padding: 48px 24px 64px; }
+.admin-users-header { align-items: end; display: flex; gap: 20px; justify-content: space-between; margin-bottom: 28px; }
+.admin-users-header h1 { color: #17213d; font-size: clamp(30px, 4vw, 42px); letter-spacing: -.04em; margin: 7px 0 10px; }
+.admin-users-header div > p:last-child { color: #64748b; font-size: 16px; }
+.admin-users-header > a { border: 1px solid #cbd5e1; border-radius: 8px; color: #2563eb; font-weight: 600; padding: 10px 14px; text-decoration: none; white-space: nowrap; }
+.admin-users-controls { align-items: end; background: #fff; border: 1px solid #e2e8f0; border-radius: 14px; display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 22px; padding: 18px; }
+.admin-users-controls label { display: grid; gap: 7px; color: #475569; font-size: 14px; font-weight: 600; }
+.admin-search-field { flex: 1 1 280px; }
+.admin-role-filter { min-width: 155px; }
+.admin-users-controls input, .admin-users-controls select { background: #fff; border: 1px solid #cbd5e1; border-radius: 8px; color: #17213d; font: inherit; padding: 10px 12px; }
+.admin-reset-filters, .admin-users-state button, .admin-users-pagination button { background: #fff; border: 1px solid #cbd5e1; border-radius: 8px; color: #2563eb; cursor: pointer; font: inherit; font-weight: 600; padding: 10px 14px; }
+.admin-users-results { color: #64748b; font-size: 14px; margin: 0 0 12px; }
+.admin-users-table-wrap, .admin-users-state { background: #fff; border: 1px solid #e2e8f0; border-radius: 14px; }
+.admin-users-table-wrap { overflow: hidden; }
+.admin-users-table { border-collapse: collapse; width: 100%; }
+.admin-users-table th, .admin-users-table td { border-bottom: 1px solid #e2e8f0; padding: 15px 18px; text-align: left; }
+.admin-users-table th { background: #f8fafc; color: #475569; font-size: 13px; }
+.admin-users-table td { color: #334155; font-size: 14px; }
+.admin-users-table tr:last-child td { border-bottom: 0; }
+.admin-role-badge { border-radius: 999px; display: inline-block; font-size: 12px; font-weight: 700; padding: 5px 9px; }
+.role-candidate { background: #dbeafe; color: #1d4ed8; }.role-employer { background: #dcfce7; color: #15803d; }.role-admin { background: #ede9fe; color: #6d28d9; }
+.admin-users-state { color: #64748b; padding: 30px; text-align: center; }.admin-users-state p { margin-bottom: 14px; }.admin-users-state p:only-child { margin-bottom: 0; }
+.admin-users-error { border-color: #fecaca; color: #b91c1c; }
+.admin-users-success { background: #dcfce7; border: 1px solid #86efac; border-radius: 8px; color: #166534; margin: 0 0 12px; padding: 12px 14px; }
+.admin-users-error button { background: #2563eb; border: 0; color: #fff; }
+.admin-delete-user { background: #b91c1c; border: 1px solid #b91c1c; border-radius: 8px; color: #fff; cursor: pointer; font: inherit; font-size: 13px; font-weight: 700; padding: 8px 10px; white-space: nowrap; }.admin-delete-user:hover { background: #991b1b; }.admin-delete-user:disabled { cursor: wait; opacity: .7; }.admin-delete-unavailable { color: #64748b; font-size: 13px; font-weight: 600; }
+.admin-dialog-backdrop { align-items: center; background: rgb(15 23 42 / 55%); display: flex; inset: 0; justify-content: center; padding: 20px; position: fixed; z-index: 20; }.admin-delete-dialog { background: #fff; border-radius: 14px; box-shadow: 0 20px 45px rgb(15 23 42 / 28%); max-width: 480px; padding: 26px; width: 100%; }.admin-delete-dialog h2 { color: #17213d; margin: 0 0 10px; }.admin-delete-dialog p { color: #475569; line-height: 1.55; margin: 0; }.admin-delete-error { color: #b91c1c !important; margin-top: 12px !important; }.admin-delete-actions { display: flex; gap: 10px; justify-content: end; margin-top: 22px; }.admin-delete-actions button:first-child { background: #fff; border: 1px solid #cbd5e1; border-radius: 8px; color: #334155; cursor: pointer; font: inherit; font-weight: 600; padding: 9px 12px; }
+.admin-users-pagination { align-items: center; display: flex; gap: 14px; justify-content: center; margin-top: 22px; }.admin-users-pagination span { color: #64748b; font-size: 14px; }.admin-users-pagination button:disabled { color: #94a3b8; cursor: not-allowed; }
+
+@media (max-width: 680px) { .admin-users-page { padding: 32px 16px 48px; }.admin-users-header { align-items: flex-start; flex-direction: column; }.admin-users-table-wrap { background: transparent; border: 0; overflow: visible; }.admin-users-table, .admin-users-table tbody, .admin-users-table tr, .admin-users-table td { display: block; width: 100%; }.admin-users-table thead { display: none; }.admin-users-table tr { background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; margin-bottom: 12px; overflow: hidden; padding: 7px 0; }.admin-users-table td { align-items: center; border: 0; display: flex; justify-content: space-between; gap: 18px; padding: 9px 14px; text-align: right; }.admin-users-table td::before { color: #64748b; content: attr(data-label); font-size: 12px; font-weight: 700; text-align: left; }.admin-users-pagination { gap: 9px; }.admin-users-pagination button { padding: 9px 10px; } }

@@ -1,0 +1,17 @@
+/* Explicit foregrounds keep every score readable on the white ring center. */
+.resume-analyzer-page { color: var(--color-text); }
+.resume-analyzer-page .eyebrow { color: var(--color-primary); }
+.analyzer-hero h1, .score-hero h2 { color: var(--color-navy); }
+.analyzer-hero p:not(.eyebrow), .score-hero p:not(.eyebrow) { color: var(--color-text-muted); }
+.score-ring { background: conic-gradient(var(--color-primary) var(--score), var(--color-border) 0); }
+.score-ring::before { background: var(--color-surface); box-shadow: inset 0 0 0 1px rgb(16 34 77 / 5%); }
+.score-ring > div { line-height: 1; }
+.score-ring strong { color: var(--color-navy); font-size: clamp(2.5rem, 7vw, 3.1rem); font-weight: 800; line-height: 1; }
+.score-ring span { color: var(--color-text-muted); display: block; font-size: var(--text-sm); font-weight: 700; margin-top: 6px; }
+.excellent .score-ring { background: conic-gradient(var(--color-success) var(--score), var(--color-border) 0); }
+.needs-improvement .score-ring { background: conic-gradient(var(--color-warning) var(--score), var(--color-border) 0); }
+.improvement-needed .score-ring { background: conic-gradient(var(--color-danger) var(--score), var(--color-border) 0); }
+
+@media (max-width: 620px) {
+  .score-ring { align-self: center; }
+}
