@@ -84,3 +84,25 @@ cd AIService && python -m unittest test_main
 ```
 
 For deployment and test-environment guidance, see [docs/RELEASE_READINESS.md](docs/RELEASE_READINESS.md).
+
+## Screenshots
+
+### Product home and dashboards
+
+![TalentBridge homepage](docs/screenshots/homepage.png)
+
+![Employer dashboard](docs/screenshots/employer-dashboard.png)
+
+![Admin dashboard](docs/screenshots/admin-dashboard.png)
+
+### AI-powered tools
+
+![AI interview practice](docs/screenshots/ai-tools-1.png)
+
+![Resume ATS analysis in progress](docs/screenshots/ai-tools-2.png)
+
+![Resume ATS analysis results](docs/screenshots/ai-tools-3.png)
+
+![Application tracking](docs/screenshots/ai-tools-4.png)
+
+![Job search](docs/screenshots/ai-tools-5.png)
